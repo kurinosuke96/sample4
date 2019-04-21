@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>My Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body,html {
+    height: 100%;
+    font-family:"Inconsolata",sans-serif;
+    font-size: 18px;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/image/s.jpg");
+  min-height: :75%;
+}    
+
+.menu{
+  display: none;      
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+            <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+        </div>
+    </div>
+</div>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-animate-fading" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">'19 04 14</span>
+  </div>
+</header>
+<!-- Add a background color and large text -->
+<div class="w3-container " id="about">
+    <div class="w3-content" style="max-width: 1000px">
+        <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h2>
+        <p class="w3-animate-fading">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="w3-animate-fading">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey>
+        <p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <img src="/image/the-creative-exchange-435690-unsplash.jpg" alt="" style="width: 100%; max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong>every from 6am to 5pm.</p>
+    <p><strong>Address:</strong>15 Adr street,5015,NY</p>
+    </div>
+</div>
+<!--Menu container-->
+<div class="w3-container id="menu">
+    <div class="w3-content" style="max-width:1000px;">
+        <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h2>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#eat" data-toggle="tab">Eat</a></li>
+    <li><a href="#drink" data-toggle="tab">Drink</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="eat">
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit bread and muffins 5.50</p><br>
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit bread and muffins 5.50</p><br>
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit bread and muffins 5.50</p><br>
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit bread and muffins 5.50</p><br>
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit bread and muffins 5.50</p><br>
+    </div>
+    <div class="tab-pane" id="drink">
+        <h3>Coffee</h3>
+        <p>Regular coffee 2.50</p><br>
+        <h3>Coffee</h3>
+        <p>Regular coffee 2.50</p><br>
+        <h3>Coffee</h3>
+        <p>Regular coffee 2.50</p><br>
+        <h3>Coffee</h3>
+        <p>Regular coffee 2.50</p><br>
+        <h3>Coffee</h3>
+        <p>Regular coffee 2.50</p><br>
+    </div>
+</div>
+</div>
+<!--contact-->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:1000px;">
+        <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE</span></h2>
+        <form>
+            <div class="form-group">
+                <label for="name1">NAME</label>
+                <input type="text" class="form-control" id="name1">
+            </div>
+            <div class="form-group">
+                <label for="mail1">MAIL</label>
+                <input type="email" class="form-control" id="mail1">
+            </div>
+            <div class="form-group">
+                <label for="ask1">CONTACT</label>
+                <textarea id="ask1" class="form-control" cols="30" rows="5"></textarea>
+            </div>
+            <button class="w3-button w3-black" type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>©2019 The Cafe</p>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
